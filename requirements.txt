@@ -1,0 +1,16 @@
+# Image search with EmbeddingGemma 2 (imgsearch.py + webui.py)
+# Install with:  pip install -r requirements.txt
+#           or:  uv pip install -r requirements.txt
+#
+# On Windows, plain PyPI "torch" is the CPU build, which is what you have.
+# For an NVIDIA GPU, install torch + torchvision from the CUDA index first, e.g.:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+# and then run pip install -r requirements.txt (the torch lines below are already satisfied).
+
+torch
+torchvision          # required by the model's image processor
+transformers
+sentence-transformers
+accelerate
+numpy
+pillow
